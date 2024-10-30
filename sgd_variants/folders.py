@@ -1,8 +1,8 @@
 # the only import that we need
 import os
 
-# what are our models and datasets of interest? NOTE THAT SIMPLE AVERAGE ON AVAZU-APP WAS WAYYYY TOO SLOW!!!
-models = ["tgd"] # "sgd+momentum", "adagrad", 
+# what are our models and datasets of interest?
+models = ["tgd", "sgd+momentum", "adagrad"]
 
 # which datasets are we working with?
 ordered_datasets = ["pcmac_binary_sparse", "dexter_binary_sparse", "w8a_binary_sparse", 

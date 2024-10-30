@@ -1,7 +1,7 @@
 # the only import that we need
 import os
 
-# what are our models and datasets of interest? NOTE THAT SIMPLE AVERAGE ON AVAZU-APP WAS WAYYYY TOO SLOW!!!
+# what are our models and datasets of interest?
 models = ["PAC", "FSOL"]
 
 # which datasets are we working with?
