@@ -47,6 +47,11 @@ The `exponential_average` directory contains all code for running exponential-av
 - `FSOL_EA_main.py` runs one variant of exponential average ($\gamma=0.9$) on one dataset for one pass through the training data. All FSOL + exponential-average variants can be run by calling `FSOL_EA_main_runscript_driver.sh`.
 - `PAC_EA_main.py` runs one variant of exponential average ($\gamma=0.9$) on one dataset for one pass through the training data. All PAC + exponential-average variants can be run by calling `PAC_EA_main_runscript_driver.sh`.
 
+The `sgd_variants` directory contains all code for running our modified WRS-Augmented Training procedure on the non-passive-aggressive online algorithms ADAGRAD, SGD+Momentum, and TGD:
+- `folders.py` is for creating the relevant folders for our experimental results to prevent race conditions. Can call with just `python3 folders.py`.
+- `ADAGRAD_WRS_main.py` runs one variant of ADAGRAD + modified WRS-Augmented Training on one dataset for one pass through the training data. All ADAGRAD + modified WRS-Augmented Training variants can be run by calling `ADAGRAD_WRS_main_runscript_driver.sh`.
+- `SGDM_WRS_main.py` runs one variant of SGD+Momentum + modified WRS-Augmented Training on one dataset for one pass through the training data. All SGD+Momentum + modified WRS-Augmented Training variants can be run by calling `SGDM_WRS_main_runscript_driver.sh`.
+- `TGD_WRS_main.py` runs one variant of TGD + modified WRS-Augmented Training on one dataset for one pass through the training data. All TGD + modified WRS-Augmented Training variants can be run by calling `TGD_WRS_main_runscript_driver.sh`.
 
 Finally, the `visualizing_avging+non-passive-agg.ipynb` notebook generates figures showing test accuracy over time of Moving Average, Exponential Average, and WRS-Augmented Training, as well as calculates each methods' average compute time per iteration per dataset. This notebook also generates figures showing test accuracy over time of SGD+Momentum, ADAGRAD, and TGD with/without modified WRS-Augmented Training.
 
