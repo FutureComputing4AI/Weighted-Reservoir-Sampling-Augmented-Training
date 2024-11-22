@@ -1,6 +1,6 @@
 # Stabilizing Linear Passive‑Aggressive Online Learning with Weighted Reservoir Sampling
 
-This repository accompanies the paper "Stabilizing Linear Passive‑Aggressive Online Learning with Weighted Reservoir Sampling" accepted to NeurIPS 2024.
+This repository accompanies the paper "[Stabilizing Linear Passive‑Aggressive Online Learning with Weighted Reservoir Sampling](https://arxiv.org/abs/2410.23601)" accepted to NeurIPS 2024.
 
 **A note on data꞉** in the `data` folder, we include the features (stored as sparse arrays) and labels (stored as standard `NumPy` arrays) for the Newsgroups (Binary, CS) and SST‑2 datasets that we preprocessed specifically for this project. The other 14 datasets, presented in Table 1 of our paper, are easily downloadable via the provided citations and links. To run results on all 16 datasets, please convert all datasets' features into sparse arrays and labels into standard `NumPy` arrays following the examples we provide with Newsgroups (Binary, CS) and SST‑2. For the EMBER dataset, please see the [ember](https://github.com/elastic/ember) repository for additional details.
 
